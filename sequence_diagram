@@ -1,0 +1,58 @@
+A sequence diagram illustrates interactions between objects or components in a system over time. Below is a sequence diagram depicting the interactions involved in the login and registration processes:
+
+     +---------------------+           +------------------------+           +---------------------+
+     |     User            |           |     Login/Register      |           |    Database         |
+     +---------------------+           +------------------------+           +---------------------+
+            |                              |                                    |
+            |    Clicks Register           |                                    |
+            |----------------------------->|                                    |
+            |                              |                                    |
+            |                              |     Display Registration Form      |
+            |                              |----------------------------------->|
+            |                              |                                    |
+            |    Enters Registration Data  |                                    |
+            |----------------------------->|                                    |
+            |                              |                                    |
+            |                              |     Validate Registration Data     |
+            |                              |----------------------------------->|
+            |                              |                                    |
+            |                              |     Save User Data                 |
+            |                              |----------------------------------->|
+            |                              |                                    |
+            |                              |     Registration Successful        |
+            |<-----------------------------|                                    |
+            |                              |                                    |
+            |    Clicks Login              |                                    |
+            |----------------------------->|                                    |
+            |                              |                                    |
+            |                              |     Display Login Form             |
+            |                              |----------------------------------->|
+            |                              |                                    |
+            |    Enters Login Credentials  |                                    |
+            |----------------------------->|                                    |
+            |                              |                                    |
+            |                              |     Validate Login Credentials     |
+            |                              |----------------------------------->|
+            |                              |                                    |
+            |                              |     Retrieve User Data             |
+            |                              |<-----------------------------------|
+            |                              |                                    |
+            |                              |     Login Successful               |
+            |<-----------------------------|                                    |
+
+
+Explanation:
+
+The User interacts with the system by clicking on the Register button.
+The system (Login/Register component) displays the registration form.
+The User enters their registration data.
+The system validates the entered registration data.
+If the data is valid, the system saves the user data into the database, indicating successful registration.
+The User interacts with the system by clicking on the Login button.
+The system displays the login form.
+The User enters their login credentials.
+The system validates the entered login credentials.
+If the credentials are valid, the system retrieves user data from the database, indicating successful login.
+This sequence diagram illustrates the step-by-step interactions between the User, the Login/Register component, and the Database during the registration and login processes.
+
+

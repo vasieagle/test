@@ -1,0 +1,46 @@
+Below is a simple data flow diagram (DFD) for a login and registration page in a web application:
+
+               +------------------+
+               |    External      |
+               |     Users        |
+               +---------+--------+
+                         |
+                         v
+          +--------------+-------------+
+          |   Login and Registration   |
+          |           Page             |
+          +--------------+-------------+
+                         |
+         +---------------|--------------+
+         |               |              |
+         v               v              v
++----------------+  +-------------+  +------------------+
+|  User Database |  | Registration|  |    Authentication|
+|    (Data Store)|  |   Process   |  |     Process      |
++----------------+  +-------------+  +------------------+
+
+In this DFD:
+
+External Users: These are the users accessing the login and registration page from outside the system.
+
+Login and Registration Page: This is the interface presented to the users where they can either log in or register for a new account.
+
+User Database (Data Store): This is where user information, such as usernames and passwords, is stored. It's represented as a data store.
+
+Registration Process: This process handles the user registration. It receives user-provided information and stores it in the user database.
+
+Authentication Process: This process handles user authentication during the login process. It verifies the user's credentials against the information stored in the user database.
+
+Data flows:
+
+From external users to the login and registration page.
+From the login and registration page to the registration process during registration.
+From the registration process to the user database to store new user information.
+From the login and registration page to the authentication process during login.
+From the user database to the authentication process to verify user credentials.
+This diagram illustrates the flow of data and processes involved in user login and registration within the system.
+
+
+
+
+
